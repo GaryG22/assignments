@@ -1,0 +1,223 @@
+body {
+  background-color: rgb(79, 79, 79);
+}
+.container {
+  height: 400px;
+  width: 1000px;
+  margin-left: 125px;
+  border-radius:25px;
+  margin-top: 50px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  background-color: #4c4c4c;
+  box-shadow: 20px 20px 50px rgb(255, 255, 255),
+              -28px -28px 80px #ffffff;
+  
+}
+.container2 {
+  margin-top: 100px;
+  background-color: rgb(51, 51, 51);
+  height: 1000px;
+  width: 1250px;
+  border-radius: 150px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ /*{
+    width: 290px;
+    height: 290px;
+    border-radius: 300px;
+    margin-left: 225px;
+  position: relative;
+  display: block;
+  margin-top: 150px;
+    background:white;
+    box-shadow: 18px 18px 60px rgb(255, 255, 255),
+                -18px -18px 60px rgb(255, 255, 255);
+   }
+   */
+   
+.header  {
+   margin-top: -320px;
+   margin-left: 470px;
+} 
+.header h1 {
+    margin-right: -40px;
+    font-size: 30px;
+    line-height: 35px;
+    -webkit-text-fill-color: #A7C9FF;
+}
+.lang {
+  margin-top: 400px;
+  margin-right: -185px;
+
+}
+.dev {
+    text-indent: 0px;
+}
+     .header p {
+    line-height: 15px;
+    text-indent:1px;  
+    margin-top: 9px;
+    -webkit-text-fill-color: #A7C9FF;
+}
+ .split {
+   margin-left: 0px;
+   
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 80% 80%;       /* Pivot around the bottom-left palm */
+    font-size: 40px;
+    float: right;
+    margin-top: -135px;
+    margin-right: 240px;
+}
+  
+@keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }    
+}
+.pin {
+    float: right;
+    margin-top: -37px;
+    margin-right: 285px;
+}
+.htmlImg {
+    float: right;
+    margin-top: -310px;
+    margin-right: 665px;
+    width: 55px;
+}
+.htmlImg:hover {
+    transform: scale(1.3);
+    margin-top:-330px;
+    cursor: pointer;
+    transition: margin-top 100ms ease-in-out;
+}
+.java {
+    float: right;
+    margin-top: -310.5px;
+    margin-right: 610px;
+    width: 39.5px;
+}
+.java:hover {
+    margin-top: -330px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.css {
+    float: right;
+    margin-top: -314.5px;
+    margin-right: 532px;
+    width: 63px;
+}
+.css:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    margin-top: -335px;
+}
+.myImg {
+    height: 350px;
+    background: transparent;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+.node {
+    height: 35px;
+    float: right;
+    margin-top: -295px;
+    margin-right: 455px;
+}
+.node:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    margin-top: -310px;
+}
+.react {
+    float: right;
+    margin-top: -305px;
+    margin-right: 365px;
+    height: 50px;
+}
+.react:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    margin-top: -325px;
+}
+
+.heading {
+
+    margin: 0px;
+    padding: 0px;
+}
+  
+nav {
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(79, 79, 79);
+    font-family: "Montserrat", sans-serif;
+}
+  
+.heading {
+  
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+  
+.nav-links {
+    display: flex;
+}
+  
+.nav-links a {
+    color: rgb(255, 255, 255);
+    background: none;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+    display: block;
+    display: inline;
+}
+  
+.nav-links a:hover {
+  
+    background-color: rgb(150, 218, 255);
+    border-radius: 8px;
+}
+.nav-links a.active {
+    margin-right: 210px;
+    float: left;
+    font-size: large;
+    -webkit-text-fill-color: #A7C9FF;
+    margin-top: -8px;
+}
+.nav-links a.active:hover {
+    cursor:default;
+    background: fixed;
+}
+.nav-links a.hire {
+    background-color: black;
+    border-radius: 8px;
+}
+  
+   
+   
