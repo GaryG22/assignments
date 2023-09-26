@@ -29,6 +29,6 @@ document.getElementsByClassName("right")[1].textContent = "Good job! That was fa
 var clear = document.getElementsByClassName("messages")
 var btn = document.getElementById("clear-button")
 btn.addEventListener("click", function() { 
-    for(var i = 0; i< clear.length; i++) {
+    for(var i = 0; i < clear.length; i++) {
         clear[i].textContent = " "
 }});  

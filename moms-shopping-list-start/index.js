@@ -1,6 +1,6 @@
 const form = document["add-item"]
 
-form.addEventListener("submit", (e) =>{
+form.addEventListener("submit", (e) => {
     e.preventDefault()
     const title = form.title.value
     form.title.value = "" 
