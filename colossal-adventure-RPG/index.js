@@ -55,6 +55,13 @@ let goldCrate = {
     items: ["Grenade", "Rocket Launcher", "Kevlar Vest & Helemet", "Adrenaline Syring", "Dog Treats"]
 }
 
+let random = {
+    name: "",
+    hp: 0,
+    attackDamage: 0,
+
+}
+
 function specialItems(){
     if (inventory.includes ("M27 Automatic Rifle")){
         pilot.attackDamage = pilot.attackDamage + 15
@@ -82,6 +89,7 @@ function specialItems(){
     }
 }
     const combatChoice = ["Run", "Fight"]
+    const openCrate = ["open", "Dont open"]
     let inventory = []
 
 if (spotToLand[landing] === "straight into the thick of the forest" ){
@@ -107,7 +115,7 @@ else if (grid[location] === "11S MS 12289") {
 }
 readline.question(" you look down at your map and see that you need to head South-West in order to reach a friendly nearby FOB")
 readline.question("you decide to take a animal trail on the map that leads to the FOB")
-const action = readline.question("USE 'I' TO VIEW YOUR INVENTORY AND HEALTH  ")
+const action = readline.question("PLEASE USE 'I' TO VIEW YOUR INVENTORY AND STATS  ")
 if (action === "i") {
         console.log("\n INVENTORY: " + inventory + "\n HEALTH: " + pilot.hp)
         console.log("Attack Damage: " + pilot.attackDamage)
@@ -127,7 +135,7 @@ function walk (){
         console.log("You continue down the trail")
         readline.question("walking")
         readline.question("Walking")
-        enemyEncounter()
+        enemyChance()
     }if (action === "i") {
         console.log("INVENTORY: " + inventory)
         console.log("HEALTH: " + pilot.hp)
@@ -136,10 +144,54 @@ function walk (){
     }
 }
 
-/*function enemyEncounter(){
-    let chance =
+function enemyChance(){
+    let enemyEncounter = Math.floor(Math.random() * 101 )
+    if (enemyEncounter < 35 && enemyEncounter > 25) {
+        readline.question("You hear a human like scream and through the trees a enlongaged creature with the structure of a human and glowing red eyes stairs back at you." + " \n ITS A SKINWALKER")
+        enemy.name = skinWalker.name
+        enemy.hp = skinWalker.hp
+        enemy.attackDamage = wolf.attackDamage
+        combatChoice()
+    }else if (enemyEncounter < 25 && enemyEncounter > 25) {
+        readline.question("You hear a creepy giggle and the bushes behind you move..." + "\n A WITCH THROWS A POTION AND JUMPS OUT")
+        random.name = evilWitch.name 
+        random.hp = evilWitch.hp
+        random.attackDamage = evilWitch.attackDamage
+        combatChoice()
+    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
+        readline.question("You hear an enemy soldier lost and trying to find his squad..." + "\n YOU HAVE THE UPPERHAND ON HIM")
+        random.name = enemySoldier.name
+        random.hp = enemySoldier.hp
+        random.attackDamage = enemySoldier.attackDamage
+        combatChoice()
+    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
+        readline.question("You here lots of movement and then suddenly it stops...")
+        readline.question("IT COULD BE AN ENEMY PATROL SETTING UP AN AMBUSH ON YOU!")
+        random.name = enemyPatrol.name
+        random.hp = enemyPatrol.hp
+        random.attackDamage = enemyPatrol.attackDamage
+        combatChoice()
+    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
+        readline.question("You hear snarling and then see 8 seperate sets of bright eyes stairing back at you through the trees ahead." + "\n ITS A WOLF PACK")
+        random.name =  wolfPack.name
+        random.hp = wolfPack.hp
+        random.attackDamage = wolfPack.attackDamage
+        if (pilot.inventory === "Dog Treats"){
+            readline.question("You quickly pull out the bag of dog treats you found earlier and throw them to the wolf pack...")
+            readline.question("The wolves go after the treats and the leader wolf looks at you with gentle eyes and barks." + "You smile and continue walking")
+            walk()
+        }
+    }else if (enemyEncounter < 35 && enemyEncounter > 25){
+        let gold = readline.question("You see a shining gold crate under a tree")
+        let crate = readline.keyInSelect(openCrate, "Do you open the crate or continue walking")
+        if (gold[crate] === "Open" ){
+            goldCrate.chance()
+        }else if (gold[crate] === "Dont open"){
+            walk()
+        }
+    }
 }
 
-function combatChoice(){
+//function combatChoice(){
 
-}*/
+//}
