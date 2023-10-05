@@ -52,7 +52,6 @@ let wolfPack = {
 
 let goldCrate = {
     name: "Golden Crate",
-    items: ["Grenade", "Rocket Launcher", "Kevlar Vest & Helemet", "Adrenaline Syring", "Dog Treats"]
 }
 
 let random = {
@@ -61,6 +60,8 @@ let random = {
     attackDamage: 0,
 
 }
+
+let goldItems = ["Grenade", "Rocket Launcher", "Kevlar Vest & Helemet", "Adrenaline Syring", "Dog Treats"]
 
 function specialItems(){
     if (inventory.includes ("M27 Automatic Rifle")){
@@ -79,7 +80,7 @@ function specialItems(){
         pilot.hp = pilot.hp + 50
     }
 
-    if (inventory.includes ("Addrenaline Syring")){
+    if (inventory.includes ("Addrenaline Syringe")){
         pilot.hp = pilot.hp + 100
         pilot.attackDamage = pilot.attackDamage + 100
     }
@@ -88,8 +89,7 @@ function specialItems(){
 
     }
 }
-    const combatChoice = ["Run", "Fight"]
-    const openCrate = ["open", "Dont open"]
+    const runFight = ["Run", "Fight"]
     let inventory = []
 
 if (spotToLand[landing] === "straight into the thick of the forest" ){
@@ -107,20 +107,16 @@ const grid =  [ "11S MS 12467", "11S MS 12289"]
 let location = readline.keyInSelect(grid, "try and remember what your grid is")
 
 if (grid[location] === "11S MS 12467") {
+    inventory = ["Fists"]
     readline.question("MAIN 1-1: 'We cant find you at that grid, you wont be able to recieve an airdrop'")
 }
 else if (grid[location] === "11S MS 12289") {
-    inventory = " M27 Automatic Rifle "
+    inventory = ["M27 Automatic Rifle"]
+    pilot.attackDamage = pilot.attackDamage + 15
     readline.question("MAIN 1-1: 'Roger! We just airdropped you a weapon. Remember, try to avoid enemy patrols or you'll be a deadman for sure' ")
 }
 readline.question(" you look down at your map and see that you need to head South-West in order to reach a friendly nearby FOB")
 readline.question("you decide to take a animal trail on the map that leads to the FOB")
-const action = readline.question("PLEASE USE 'I' TO VIEW YOUR INVENTORY AND STATS  ")
-if (action === "i") {
-        console.log("\n INVENTORY: " + inventory + "\n HEALTH: " + pilot.hp)
-        console.log("Attack Damage: " + pilot.attackDamage)
-        console.log("Enemys Killed: " + pilot.enemysKilled)
-}
 
 while(pilot.hp > 0 && pilot.enemysKilled < 8) {
     walk()
@@ -130,13 +126,13 @@ if (pilot.enemysKilled > 7) {
 }
 
 function walk (){
-    const walking = readline.question("PLEASE USE 'W' ON THE KEYBOARD TO WALK. Remember you can always access your inventory with 'I' ")
-    if (walking === "w") {
+    const option = readline.question("PLEASE USE 'W' ON THE KEYBOARD TO WALK. You can always access your inventory with 'I' ")
+    if (option === "w") {
         console.log("You continue down the trail")
         readline.question("walking")
         readline.question("Walking")
         enemyChance()
-    }if (action === "i") {
+    }if (option === "i") {
         console.log("INVENTORY: " + inventory)
         console.log("HEALTH: " + pilot.hp)
         console.log("Attack Damage: " + pilot.attackDamage)
@@ -145,33 +141,33 @@ function walk (){
 }
 
 function enemyChance(){
-    let enemyEncounter = Math.floor(Math.random() * 101 )
-    if (enemyEncounter < 35 && enemyEncounter > 25) {
+    let encounter = Math.random() * 101
+    if (encounter < 25) { // 25% chance
+        readline.question("You hear an enemy soldier alone and lost trying to find his squad..." + "\n YOU HAVE THE UPPERHAND ON HIM")
+        random.name = enemySoldier.name
+        random.hp = enemySoldier.hp
+        random.attackDamage = enemySoldier.attackDamage
+        combatDicision()
+    }else if ( encounter < 45) { // 20% chance
         readline.question("You hear a human like scream and through the trees a enlongaged creature with the structure of a human and glowing red eyes stairs back at you." + " \n ITS A SKINWALKER")
-        enemy.name = skinWalker.name
-        enemy.hp = skinWalker.hp
-        enemy.attackDamage = wolf.attackDamage
-        combatChoice()
-    }else if (enemyEncounter < 25 && enemyEncounter > 25) {
+        random.name = skinWalker.name
+        random.hp = skinWalker.hp
+        random.attackDamage = skinWalker.attackDamage
+        combatDicision()
+    }else if (encounter < 65) { // 20% chance
         readline.question("You hear a creepy giggle and the bushes behind you move..." + "\n A WITCH THROWS A POTION AND JUMPS OUT")
         random.name = evilWitch.name 
         random.hp = evilWitch.hp
         random.attackDamage = evilWitch.attackDamage
-        combatChoice()
-    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
-        readline.question("You hear an enemy soldier lost and trying to find his squad..." + "\n YOU HAVE THE UPPERHAND ON HIM")
-        random.name = enemySoldier.name
-        random.hp = enemySoldier.hp
-        random.attackDamage = enemySoldier.attackDamage
-        combatChoice()
-    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
+        combatDicision()
+    }else if (encounter < 70) { // 5% chance
         readline.question("You here lots of movement and then suddenly it stops...")
         readline.question("IT COULD BE AN ENEMY PATROL SETTING UP AN AMBUSH ON YOU!")
         random.name = enemyPatrol.name
         random.hp = enemyPatrol.hp
         random.attackDamage = enemyPatrol.attackDamage
-        combatChoice()
-    }else if (enemyEncounter < 35 && enemyEncounter > 25) {
+        combatDicision()
+    }else if (encounter < 80) { // 10% chance
         readline.question("You hear snarling and then see 8 seperate sets of bright eyes stairing back at you through the trees ahead." + "\n ITS A WOLF PACK")
         random.name =  wolfPack.name
         random.hp = wolfPack.hp
@@ -181,17 +177,87 @@ function enemyChance(){
             readline.question("The wolves go after the treats and the leader wolf looks at you with gentle eyes and barks." + "You smile and continue walking")
             walk()
         }
-    }else if (enemyEncounter < 35 && enemyEncounter > 25){
+        combatDicision()
+    }else if (encounter < 100){ // 20% chance
         let gold = readline.question("You see a shining gold crate under a tree")
-        let crate = readline.keyInSelect(openCrate, "Do you open the crate or continue walking")
-        if (gold[crate] === "Open" ){
-            goldCrate.chance()
-        }else if (gold[crate] === "Dont open"){
-            walk()
-        }
+        openDicision()
     }
 }
 
-//function combatChoice(){
+function openDicision(){
+    const openCrate = ["open", "Dont open"]
+    let crate = readline.keyInSelect(openCrate, "Do you open the crate or continue walking")
+    if (openCrate[crate] === "open" ){
+        readline.question("You open the create...")
+        let foundItem = Math.random() * 101
+        if (foundItem < 25){
+            inventory.push("Grenade")
+            specialItems()
+            readline.question("You Found a Grenade")
+        }else if (foundItem < 45) {
+            inventory.push("Rocket Launcher")
+            specialItems()
+            readline.question("You found a Rocket Launcher")
+        }else if (foundItem < 65) {
+            inventory.push("Kevlar Vest & Helmet")
+            specialItems()
+            readline.question("You found a Kevlar Vest and Helmet")
+        }else if (foundItem < 75){
+            inventory.push("Addrenaline Syringe")
+            specialItems()
+            readline.question("You found an Addrenaline Syringe")
+        }else if ( foundItem < 100) {
+            inventory.push("Dog Treats")
+            specialItems()
+            readline.question("You found a bag of Dog Treats")
+        }
+    }else if (openCrate[crate] === "Dont open"){
+        walk()
+    }
+}
 
-//}
+function combatDicision(){
+let dicision = readline.keyInSelect(runFight, "HURRY! Make your decicion quickly!")
+if (dicision === 1){
+    fight()
+}if (dicision === 0){
+    runAway()
+}}
+
+function fight(){
+    while( random.hp > 0 && pilot.hp > 0){
+    
+        let pilotAttack = Math.random() * pilot.attackDamage
+        console.log("You attack the" + random.name  + " inflicting " + pilotAttack + " damage! ")
+        random.hp = random.hp - pilotAttack
+        readline.question("The " + random.name + "  HP is " + random.hp)
+
+    let hitChance = Math.random() * 101
+    if (hitChance < 50) {
+        let randomAttack = Math.random() * random.attackDamage
+        console.log(" The " + random.name + " attacks you, inflicting " + randomAttack + " damage! ")
+        pilot.hp = pilot.hp - randomAttack
+        readline.question("Your HP is " + pilot.hp)
+    } else {
+        console.log("The " + random.name + " missed while attacking!")
+
+    } 
+     if (random.hp <= 0 ){
+        readline.question ("You killed the " + random.name + " but you may have alreted enemys nearby")
+        readline.question("You gained 50 HP from the " + random.name)
+        pilot.hp = pilot.hp + 50
+        pilot.enemysKilled = pilot.enemysKilled + 1
+    }else if (pilot.hp <= 0 ) {
+        readline.question("You are killed by the " + random.name +  ". Your body lays under a mossy tree, forever forgotten in the dark cold forest ")
+    }
+}}
+
+function runAway(){
+    let escape = Math.random() *101
+    if(escape > 50){
+        readline.question("You escape from the " + random.name)
+    }else if (escape < 49) {
+        readline.question("You are unable to escape and must fight!")
+        fight()
+    }
+}
