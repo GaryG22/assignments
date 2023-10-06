@@ -1,6 +1,15 @@
 
-body {
+html, body {
     background-color: #323232;
+    width:fit-content;
+    
+}
+
+::-webkit-scrollbar{
+  overflow: hidden;
+}
+::-webkit-scrollbar-corner{
+  overflow: hidden;
 }
 
 .container {
@@ -87,7 +96,7 @@ body {
 
 .container4 {
     margin-top: -50px;
-    margin-bottom: 0px;
+    margin-bottom: -125px;
     margin-left: 780px;
     background-color: rgb(255, 255, 255);
     height: 200px;
@@ -123,10 +132,16 @@ body {
     margin-top: 100px;
     margin-bottom: -600px;
     background: none;
+
+    &:hover {
+      transform: 
+      translate3d(-300px, -200px, -0px);
+      transition: 1000ms;
+    }
 }
 .car2 {
-    margin-left: -100px;
-    margin-top: -500px;
+    margin-left: -120px;
+    margin-top: -400px;
     background: none;
 }
 ul {
@@ -141,10 +156,19 @@ ul {
 } 
 .header h1 {
     margin-right: -40px;
-    font-size: 30px;
-    line-height: 35px;
-    -webkit-text-fill-color: #6da5ff;
+    font-size: 40px;
+    line-height: 25px;
+    animation: color-change 10s infinite;
 }
+
+@keyframes color-change {
+  0% { color: rgb(91, 156, 255); }
+  25% { color: rgb(154, 186, 255); }
+  50% { color: rgb(197, 228, 255); }
+  75% { color: rgb(154, 186, 255); }
+  100% { color: rgb(91, 156, 255); }
+}
+
 .lang {
   margin-top: 400px;
   margin-right: -185px;
@@ -157,7 +181,7 @@ ul {
     line-height: 15px;
     text-indent:1px;  
     margin-top: 9px;
-    -webkit-text-fill-color: #609dff;
+    -webkit-text-fill-color:#cde0ff
 }
  .split {
    margin-left: 0px;
@@ -171,7 +195,7 @@ ul {
     font-size: 40px;
     float: right;
     margin-top: -135px;
-    margin-right: 240px;
+    margin-right: 290px;
 }
   
 @keyframes wave-animation {
@@ -187,7 +211,7 @@ ul {
 .pin {
     float: right;
     margin-top: -37px;
-    margin-right: 285px;
+    margin-right: 300px;
 }
 .htmlImg {
     float: right;
