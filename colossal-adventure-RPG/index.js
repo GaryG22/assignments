@@ -172,7 +172,7 @@ function enemyChance(){
         random.name =  wolfPack.name
         random.hp = wolfPack.hp
         random.attackDamage = wolfPack.attackDamage
-        if (pilot.inventory === "Dog Treats"){
+        if (inventory.includes("Dog Treats")){
             readline.question("You quickly pull out the bag of dog treats you found earlier and throw them to the wolf pack...")
             readline.question("The wolves go after the treats and the leader wolf looks at you with gentle eyes and barks." + "You smile and continue walking")
             walk()
