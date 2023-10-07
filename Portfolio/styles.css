@@ -11,6 +11,9 @@ html, body {
 ::-webkit-scrollbar-corner{
   overflow: hidden;
 }
+.containers{
+  padding-left: 80px;
+}
 
 .container {
   height: 400px;
@@ -20,11 +23,11 @@ html, body {
   margin-top: 120px;
   transform-style: preserve-3d;
   overflow: hidden;
-  background-color: rgb(66, 66, 66);
-  box-shadow: 20px 20px 60px rgb(255, 255, 255),
-  -20px -20px 60px #ffffff;
-  
+  background-color: rgb(67, 67, 67);
+  box-shadow: 20px 20px 60px rgb(207, 223, 255),
+  -20px -20px 60px rgb(207, 223, 255);
 }
+ 
 
 .container2 {
   margin-top:150px;
@@ -128,21 +131,22 @@ html, body {
     }
 }
 .car1 {
-    margin-left: 600px;
+    margin-left: 680px;
     margin-top: 100px;
     margin-bottom: -600px;
     background: none;
-
-    &:hover {
+    /*&:hover {
       transform: 
       translate3d(-300px, -200px, -0px);
       transition: 1000ms;
-    }
+    }*/
 }
 .car2 {
-    margin-left: -120px;
-    margin-top: -400px;
-    background: none;
+  width: 650px;
+    margin-left: -65px;
+    margin-top: -420px;
+    background:none;
+    overflow: visible;
 }
 ul {
     list-style-type: none;
@@ -162,11 +166,11 @@ ul {
 }
 
 @keyframes color-change {
-  0% { color: rgb(91, 156, 255); }
+  0% { color: rgb(60, 138, 255); }
   25% { color: rgb(154, 186, 255); }
   50% { color: rgb(197, 228, 255); }
   75% { color: rgb(154, 186, 255); }
-  100% { color: rgb(91, 156, 255); }
+  100% { color: rgb(60, 138, 255); }
 }
 
 .lang {
@@ -181,7 +185,7 @@ ul {
     line-height: 15px;
     text-indent:1px;  
     margin-top: 9px;
-    -webkit-text-fill-color:#cde0ff
+    -webkit-text-fill-color:#ffffff
 }
  .split {
    margin-left: 0px;
@@ -195,7 +199,7 @@ ul {
     font-size: 40px;
     float: right;
     margin-top: -135px;
-    margin-right: 290px;
+    margin-right: 270px;
 }
   
 @keyframes wave-animation {
@@ -337,6 +341,63 @@ nav {
     background-color: black;
     border-radius: 8px;
 }
-  
-   
-   
+
+h2 {
+  font-size: 80px;
+  transform:
+  translate3d(0px, -16px, 0px)
+  rotateX(51deg)
+  rotateZ(43deg);
+  margin-left: 425px;
+  margin-top:-100px;
+  color: rgba(0, 0, 0, 0.352);
+  text-shadow: 4px 4px 6px #fff, 0 0 0 #000, 4px 4px 6px #fff;
+  mix-blend-mode: multiply;
+}
+.road {
+  padding-left: 80px;
+}
+.cones{
+  width: 150px;
+  margin-left: 725px;
+  margin-top: -890px;
+  margin-bottom: 100px;
+}
+.cones2{
+  width: 150px;
+  float:left;
+  margin-top: -440px;
+  margin-left: 420px;
+  background: none;
+  position:static;
+}
+.project{
+  width: 1245px;
+  overflow: hidden;
+}
+
+.full-screen {
+  position: fixed;
+  animation: go-full-screen forwards 500ms ease-in-out;
+  inset: var(--inset);
+}
+
+.shrink-down {
+  animation: go-full-screen reverse backwards 500ms ease-in-out !important;
+}
+
+@keyframes go-full-screen {
+  from {
+    inset: var(--inset);
+  }
+  to {
+    transform:
+    rotateX(180deg)
+    rotateZ(180deg);
+    height: 800px;
+    width: 1270px;
+    margin-top: 0px;
+    margin-left: 0px;
+    inset: 0;
+  }
+}
