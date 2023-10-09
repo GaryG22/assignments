@@ -12,7 +12,8 @@ html, body {
   overflow: hidden;
 }
 .containers{
-  padding-left: 80px;
+  margin-left: 75px;
+  margin-top: -620px;
 }
 
 .container {
@@ -100,7 +101,7 @@ html, body {
 .container4 {
     margin-top: -50px;
     margin-bottom: -125px;
-    margin-left: 780px;
+    margin-left: 770px;
     background-color: rgb(255, 255, 255);
     height: 200px;
     width: 300px;
@@ -131,9 +132,8 @@ html, body {
     }
 }
 .car1 {
-    margin-left: 680px;
-    margin-top: 100px;
-    margin-bottom: -600px;
+    padding-left: 650px;
+    margin-top: -120px;
     background: none;
     /*&:hover {
       transform: 
@@ -176,7 +176,6 @@ ul {
 .lang {
   margin-top: 400px;
   margin-right: -185px;
-
 }
 .dev {
     text-indent: 0px;
@@ -217,67 +216,45 @@ ul {
     margin-top: -37px;
     margin-right: 300px;
 }
-.htmlImg {
+.insta {
     float: right;
-    margin-top: -310px;
+    margin-top: -323px;
     margin-right: 665px;
-    width: 55px;
+    width: 58px;
+    transition: .5s;
 }
-.htmlImg:hover {
-    transform: scale(1.3);
-    margin-top:-330px;
+.insta:hover {
+  transform: scale(1.4);
     cursor: pointer;
-    transition: margin-top 100ms ease-in-out;
 }
-.java {
+.link {
     float: right;
-    margin-top: -310.5px;
-    margin-right: 610px;
-    width: 39.5px;
+    margin-top: -320px;
+    margin-right: 590px;
+    width: 50px;
+    transition: .5s;
 }
-.java:hover {
-    margin-top: -330px;
-    transform: scale(1.3);
+.link:hover {
+  transform: scale(1.4);
     cursor: pointer;
 }
-.css {
+.git {
     float: right;
-    margin-top: -314.5px;
-    margin-right: 532px;
-    width: 63px;
+    margin-top: -322px;
+    margin-right: 510px;
+    border-radius: 50px;
+    width: 50px;
+    transition: .5s;
 }
-.css:hover {
+.git:hover {
     cursor: pointer;
-    transform: scale(1.3);
-    margin-top: -335px;
+    transform: scale(1.4);
 }
 .myImg {
     height: 350px;
     background: transparent;
     margin-top: 25px;
     margin-left: 80px;
-}
-.node {
-    height: 35px;
-    float: right;
-    margin-top: -295px;
-    margin-right: 455px;
-}
-.node:hover {
-    cursor: pointer;
-    transform: scale(1.3);
-    margin-top: -310px;
-}
-.react {
-    float: right;
-    margin-top: -305px;
-    margin-right: 365px;
-    height: 50px;
-}
-.react:hover {
-    cursor: pointer;
-    transform: scale(1.3);
-    margin-top: -325px;
 }
 
 .heading {
@@ -342,7 +319,7 @@ nav {
     border-radius: 8px;
 }
 
-h2 {
+.ground {
   font-size: 80px;
   transform:
   translate3d(0px, -16px, 0px)
@@ -372,8 +349,15 @@ h2 {
   position:static;
 }
 .project{
-  width: 1245px;
+  width: 1240px;
+  margin-left: 10px;
+  margin-top: 150px;
+  height: 650px;
+  resize: both;
+  align-items: stretch;
   overflow: hidden;
+
+
 }
 
 .full-screen {
@@ -400,4 +384,80 @@ h2 {
     margin-left: 0px;
     inset: 0;
   }
+}
+.about1{
+  width: 1200px;
+  height: 1000px;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-top: 150px;
+}
+.title2{
+  font-size: 50px;
+  margin-left: 470px;
+  margin-top: 50px;
+  position: absolute;
+}
+.intro{
+padding-left: 170px;
+padding-top: 10px;
+  font-family: 'Francois One', sans-serif;
+}
+.introP{
+padding-left: 5px;
+padding-right: 20px;
+font-family: 'Francois One', sans-serif;
+display: flex;
+}
+.hands{
+  width: 150px;
+  padding-left: 170px;
+  padding-top: 30px;
+  overflow: visible;
+  background: none;
+  display: flex;
+}
+.introCon{
+  width: 500px;
+  height: 500px;
+  margin-left: 0px;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.challenges{
+  width: 500px;
+  height: 500px;
+  margin-left: 700px;
+  margin-top: -500px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.challenge{
+  padding-left: 150px;
+  padding-top: 10px;
+  font-family: 'Francois One', sans-serif;
+}
+.text{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Francois One', sans-serif;
+}
+.hill{
+  width: 170px;
+  padding-top: 5px;
+  padding-left: 150px;
+}
+.adversity2{
+  font-family: 'Francois One', sans-serif;
+}
+.text2{
+  font-family: 'Francois One', sans-serif;
+}
+.key2{
+  font-family: 'Francois One', sans-serif;
+}
+.text3{
+  font-family: 'Francois One', sans-serif;
 }
