@@ -387,7 +387,7 @@ nav {
 }
 .about1{
   width: 1200px;
-  height: 1000px;
+  height: 1200px;
   overflow: hidden;
   margin-left: 30px;
   margin-top: 150px;
@@ -397,17 +397,28 @@ nav {
   margin-left: 470px;
   margin-top: 50px;
   position: absolute;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(60, 138, 255); }
+  25% { color: rgb(154, 186, 255); }
+  50% { color: rgb(197, 228, 255); }
+  75% { color: rgb(154, 186, 255); }
+  100% { color: rgb(60, 138, 255); }
 }
 .intro{
 padding-left: 170px;
 padding-top: 10px;
   font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: rgb(60, 138, 255);
 }
 .introP{
 padding-left: 5px;
 padding-right: 20px;
 font-family: 'Francois One', sans-serif;
 display: flex;
+-webkit-text-fill-color: #cadbff;
 }
 .hands{
   width: 150px;
@@ -438,26 +449,57 @@ display: flex;
   padding-left: 150px;
   padding-top: 10px;
   font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: rgb(60, 138, 255);
 }
 .text{
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: #cadbff;
 }
 .hill{
   width: 170px;
   padding-top: 5px;
   padding-left: 150px;
 }
+.adversity{
+  width: 500px;
+  height: 500px;
+}
 .adversity2{
   font-family: 'Francois One', sans-serif;
+  margin-top: -80px;
+  margin-left: 120px;
+  -webkit-text-fill-color: rgb(60, 138, 255);
+}
+.adver{
+  width: 350px;
+  margin-top: -90px;
+  margin-left:50px;
+  background: none;
 }
 .text2{
   font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: #cadbff;
+}
+.key{
+  width: 500px;
+  height: 500px;
+  margin-top: -500px;
+  margin-left: 700px;
+}
+.key1{
+  width: 180px;
+  margin-left: 150px;
+  margin-top: 0px;
 }
 .key2{
   font-family: 'Francois One', sans-serif;
+  padding-left: 150px;
+  padding-top: -10px;
+  -webkit-text-fill-color: rgb(60, 138, 255);
 }
 .text3{
   font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: #cadbff;
 }
