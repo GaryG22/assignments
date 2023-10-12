@@ -54,6 +54,76 @@ const shrink = (e) => {
     })
     cons.forEach(con => {
         con.addEventListener("click", (e) =>{
-            window.location.assign(URL = "https://www.reddit.com/r/css/comments/2v70is/can_anyone_help_trying_to_add_a_delay_between/");
-        },300);  
+            window.location.assign(URL = "https://www.notion.so/vschooldesign/Level-1-HTML-CSS-JavaScript-fe85cb184bf04e16a918be3d69491a67");
+        },5000);  
     })
+
+const modelViewer = document.querySelector("#envlight-demo");
+  
+  let lastX;
+  let panning = false;
+  let skyboxAngle = 0;
+  let radiansPerPixel;
+      
+  const startPan = () => {
+    const orbit = modelViewer.getCameraOrbit();
+    const { radius } = orbit;
+    radiansPerPixel = -1 * radius / modelViewer.getBoundingClientRect().height;
+    modelViewer.interactionPrompt = 'none';
+  };
+  
+  const updatePan = (thisX) => {      
+    const delta = (thisX - lastX) * radiansPerPixel;
+    lastX = thisX;
+    skyboxAngle += delta;
+    const orbit = modelViewer.getCameraOrbit();
+    orbit.theta += delta;
+    modelViewer.cameraOrbit = orbit.toString();
+    modelViewer.resetTurntableRotation(skyboxAngle);
+    modelViewer.jumpCameraToGoal();
+  }
+  
+  modelViewer.addEventListener('mousedown', (event) => {
+    panning = event.button === 2 || event.ctrlKey || event.metaKey || event.shiftKey;
+    if (!panning)
+      return;
+
+    lastX = event.clientX;
+    startPan();
+    event.stopPropagation();
+  }, true);
+
+  modelViewer.addEventListener('touchstart', (event) => {
+    const {targetTouches, touches} = event;
+    panning = targetTouches.length === 2 && targetTouches.length === touches.length;
+    if (!panning)
+      return;
+
+    lastX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
+    startPan();
+  }, true);
+
+  self.addEventListener('mousemove', (event) => {
+    if (!panning)
+      return;
+
+    updatePan(event.clientX);
+    event.stopPropagation();
+  }, true);
+
+  modelViewer.addEventListener('touchmove', (event) => {
+    if (!panning || event.targetTouches.length !== 2)
+      return;
+
+    const {targetTouches} = event;
+    const thisX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
+    updatePan(thisX);
+  }, true);
+
+  self.addEventListener('mouseup', (event) => {
+    panning = false;
+  }, true);
+  
+  modelViewer.addEventListener('touchend', (event) => {
+    panning = false;
+  }, true);

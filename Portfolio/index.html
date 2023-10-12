@@ -2,12 +2,14 @@
 <html>
     <head> 
             <title> Portfolio </title>
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel = "stylesheet" type="text/css" href = "styles.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
         <style>
             h1 {
                 font-family: 'Francois One', sans-serif;
@@ -61,13 +63,23 @@
             </div>
             <article id = about>
                 <div class = "about1">
-                    <h1 class = "title2"> ABOUT ME! </h1>
-                    <div class = "introCon">
-                        <img class = "hands" src = "https://i.postimg.cc/vTXmhNSn/4993015.png"/>
+                    <div class="cubeCon">
+                        <model-viewer
+                        id="envlight-demo" camera-controls touch-action="pan-y" disable-pan oncontextmenu="return false;" 
+                   src="https://cdn.glitch.me/1c194574-1e4b-4c81-bc57-ff5cf217675a/room%205.glb?v=1697093610955" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.jpeg" shadow-intensity="1"
+                       alt="room"></model-viewer>
+                    <div class = "me">
+                        <h1 class = "me1">Developing and Growing!</h1>
+                        <p class = "me2">Software Developemnt is a huge passion of mine! From creating random floating rooms likes this one, to full scale API infested web pages. If there is a challenge and a creation to be made, thats where you'll find me. I love every part of develpemnt even when it feels like I might be wondering a dark room without a flashlight :) </p>
+                    </div>
+                    </div>
+                    <div class = "screen2"> <h1 class = "title2"> ABOUT ME! </h1> <img class = "hands" src = "https://i.postimg.cc/vTXmhNSn/4993015.png"/>
                         <h2 class = "intro"> Introduction </h2>
                         <p class = "introP">Welcome to my profile! My name is Gary Gritsch. Growing up I’ve always been interested in software development and understanding the way programs operate. 
                             I would spend a great deal of time understanding and getting familiar with technology and the fast developing world around us has never made this easy. 
-                            But that’s exactly why I love it! My passion for learning and dedication to developing new skills has made me into the person I am today.</p>
+                            But that’s exactly why I love it! My passion for learning and dedication to developing new skills has made me into the person I am today.</p></div>
+                </div>
+                    <div class = "introCon">
                     </div>
                     <div class = "challenges">
                         <img class = "hill" src = "https://i.postimg.cc/rpKpRyVW/hill-Photo-Room.png"/>

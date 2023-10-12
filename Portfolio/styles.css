@@ -1,7 +1,6 @@
 
 html, body {
     background-color: #323232;
-    width:fit-content;
     
 }
 
@@ -25,7 +24,7 @@ html, body {
   transform-style: preserve-3d;
   overflow: hidden;
   background-color: rgb(67, 67, 67);
-  box-shadow: 20px 20px 60px rgb(207, 223, 255),
+  box-shadow: 20px 20px 60px rgb(41, 64, 109),
   -20px -20px 60px rgb(207, 223, 255);
 }
  
@@ -393,9 +392,9 @@ nav {
   margin-top: 150px;
 }
 .title2{
-  font-size: 50px;
-  margin-left: 470px;
-  margin-top: 50px;
+  font-size: 30px;
+  margin-left: 120px;
+  margin-top: 100px;
   position: absolute;
   animation: color-change 10s infinite;
 }
@@ -408,22 +407,24 @@ nav {
   100% { color: rgb(60, 138, 255); }
 }
 .intro{
-padding-left: 170px;
-padding-top: 10px;
+padding-left: 10px;
+font-size: 15px;
+margin-top: 100px;
   font-family: 'Francois One', sans-serif;
   -webkit-text-fill-color: rgb(60, 138, 255);
 }
 .introP{
 padding-left: 5px;
 padding-right: 20px;
+font-size: 10px;
 font-family: 'Francois One', sans-serif;
 display: flex;
 -webkit-text-fill-color: #cadbff;
 }
 .hands{
-  width: 150px;
+  width: 50px;
   padding-left: 170px;
-  padding-top: 30px;
+  padding-top: 50px;
   overflow: visible;
   background: none;
   display: flex;
@@ -502,4 +503,67 @@ display: flex;
 .text3{
   font-family: 'Francois One', sans-serif;
   -webkit-text-fill-color: #cadbff;
+}
+.cubeCon model-viewer{
+width: 500px;
+height: 500px;
+  margin-top: -500px;
+  margin-left: 400px;
+}
+.cubeCon {
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  margin-left: 300px;
+  margin-top: 500px;
+}
+.me {
+  width: 600px;
+  height: 400px;
+  margin-top: -400px;
+  margin-left: -250px;
+}
+.me1{
+  font-family: 'Francois One', sans-serif;
+  padding-left: 50px;
+  font-size: 40px;
+  -webkit-text-fill-color: rgb(60, 138, 255);
+}
+.me2{
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+  -webkit-text-fill-color: #cadbff;
+}
+
+.screen3{
+  margin-top: -110px;
+  margin-left: -20px;
+  width: 400px;
+  height: 200px;
+  border: solid black;
+  background-color: #15273eee;
+  transform:
+      rotateX(0deg)
+      rotateY(130deg)
+      rotateZ(20deg);
+    transform-style: preserve-3d;
+    border-radius: 0px;
+    box-shadow:
+      3px 1px 0 1px #000000,
+      -1px 0 38px 0 rgb(255, 255, 255),
+      38px 38px 28px 0 rgb(0, 0, 0);
+    transition:
+      .4s ease-in-out transform,
+      .4s ease-in-out box-shadow;
+  
+    &:hover {
+      transform:
+        translate3d(0px, -16px, 0px)
+        rotateX(51deg)
+        rotateZ(43deg);
+      box-shadow:
+        1px 1px 0 1px #f9f9fb,
+        -1px 0 28px 0 rgb(0, 0, 0),
+        54px 54px 28px -10px rgb(0, 0, 0);
+    }
 }
