@@ -1,0 +1,29 @@
+html body {
+    background-color: rgb(255, 255, 255);
+}
+.title{
+    padding-left: 470px;
+    padding-top: 0px;
+    font-size: 60px;
+}
+#container{
+    margin-left: 325px;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(196, 237, 255);
+    border-radius: 300px;
+}
+#travelForm{
+    padding-top: 30px;
+    padding-left: 220px;
+}
+.gender {
+font-size: 15px;
+}
+.restrictions{
+    font-size: 15px;
+}
+.submit{
+    width: 200px;
+    height: 30px;
+}

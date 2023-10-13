@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Travel Form</title>
+</head>
+<body>
+    <h1 class = "title"> Travel Form</h1>
+    <div id = "container">
+    <form  id = "travelForm" name = "travelForm">
+        <input placeholder = "First Name:" type = "text" name = "fName" class = "box"/> 
+        <br></br>
+        <input placeholder = "Last Name:" type = "text" name = "lName" class = ""/>
+        <br></br>
+        <input placeholder = "Age" type = "number" name = "age"/>
+        <h2 class = "gender">Gender:</h2>
+        Male:<input type = "radio" name = "gender" value = "male"/>
+        <br></br>
+        Female<input type = "radio" name = "gender" value = "female"/>
+        <br></br>
+        <select id = "destination">
+            <option> Select A Destination</option>
+            <option value = "california"> San Diego, CA</option>
+            <option value = "wisconsin"> Green Bay, WI</option>
+            <option value = "New York"> New York, NY</option>
+        </select>
+        <br></br>
+        <h2 name = "restrictions">Dietary Restrictions </h2>
+        Vegetarian: <input type = "checkbox" name = "restrictions" value = "vegetarian"/>
+        <br></br>
+        Kosher: <input type = "checkbox" name = "restrictions" value = "kosher"/>
+        <br></br>
+        lactose: <input type = "checkbox" name = "restrictions" value="lactose"/>
+        <br></br>
+        <button class = "submit">submit</button>
+    </div>
+    </form>
+</body>
+<script src = "index.js"></script>
+</html>
