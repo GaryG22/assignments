@@ -22,7 +22,7 @@ html body {
 }
 .bob{
     width: 170px;
-    margin-top: -280px;
+    margin-top: -245px;
     margin-left: 550px;
 }
 .img3{
@@ -31,7 +31,7 @@ html body {
 }
 .cheep{
     width: 300px;
-    margin-top: -290px;
+    margin-top: -255px;
     margin-left: 950px;
 }
 .name1 {
@@ -51,6 +51,43 @@ h2 {
     text-align: center;
 }
 button{
+    margin-top: 50px;
     width: 100px;
-    margin-left: 35px;
+    margin-left: 585px;
+    border-radius: 30px;
+}
+#price{
+    margin-left: 530px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 550px){
+    html body{
+        height: 1200px;
+    }
+    .title{
+        font-size: 30px;
+        margin-left: -300px;
+        
+    }
+    .img1 {
+        width: 100px;
+        padding-top: 20px;
+    }
+    .bob{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .cheep{
+        margin-top: 50px;
+        margin-left: 150px; 
+    }
+    button{
+        margin-left: 185px;
+        margin-top: 50px;
+    }
+   #price{
+    margin-left: 100px;
+    margin-top: 50px;
+   }
 }

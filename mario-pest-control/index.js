@@ -1,12 +1,15 @@
-const pestControl = document.pestControl
-const goombas = document.getElementById("goombas")
-const cheepCheep = document.getElementById("cheepCheeps")
-const bobOmbs = document.getElementById("bobOmbs")
+const input = document.pestControl
 
-pestControl.addEventListener("submit", function(e){
+let price = document.getElementById("price")
+console.log(price.textContent)
+
+input.addEventListener("submit", function(e){
     e.preventDefault()
-
-    let total1 = goombas.value * 5
-    console.log(total1)
+    price.textContent = "Total Price:"
+    total = Number(input.goombas.value * 5 ) + Number(input.cheep.value * 7) + Number(input.bob.value * 11)
+    price.textContent = price.textContent + " " + total
+    input.goombas.value = ""
+    input.cheep.value = ""
+    input.bob.value = ""
 })
 
