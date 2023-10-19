@@ -81,11 +81,14 @@ function specialItems(){ // Items found in gold crate and what buff they give to
         pilot.attackDamage = pilot.attackDamage + 100
     }
 }
+// '=' assignment operator
+// '==' compares two variables but ignores the data type
+// '===' compares two variables but does check the data type (strictly equal)
     const runFight = ["Run", "Fight"] //array
     let inventory = [] //empty array for inventory
 
-if (spotToLand[landing] === "straight into the thick of the forest" ){ // landing dicision
-    pilot.hp = "100"
+if (spotToLand[landing] === "straight into the thick of the forest" ){ // landing conditions
+    pilot.hp = "100" 
     readline.question("You crash through the trees but you are unharmed")
 }else if (spotToLand[landing] === "Try to make it to a small pond") {
     pilot.hp = "90"
@@ -117,7 +120,7 @@ if (pilot.enemysKilled > 7) { //if user kill are more than 7, they win
     console.log("You see the FOB and run over to it. A group of Marines help you in. CONGRADULATIONS YOU MADE IT!")
 }
 
-function walk (){
+function walk (){ 
     const option = readline.question("PLEASE USE 'W' ON THE KEYBOARD TO WALK. You can always access your inventory with 'I' ")
     if (option === "w") { // walking
         console.log("You continue down the trail")
@@ -131,9 +134,9 @@ function walk (){
         console.log("Enemys Killed: " + pilot.enemysKilled)
     }
 }
-
-function enemyChance(){ // math.floor makes the number whole
-    let encounter = Math.floor(Math.random() * 101) //selects a random number between 1-100 (101 because it starts at 0)
+//CONDITIONS 
+function enemyChance(){ // math.floor makes the number whole 
+    let encounter = Math.floor(Math.random() * 101) //selects a random number between 0-100 (101 because it starts at 0)
     if (encounter < 25) { // 25% chance  random number less than 25
         readline.question("You hear an enemy soldier alone and lost trying to find his squad..." + "\n YOU HAVE THE UPPERHAND ON HIM")
         random.name = enemySoldier.name  //creates the enemy
@@ -219,7 +222,7 @@ if (dicision === 1){
 function fight(){
     while( random.hp > 0 && pilot.hp > 0){ //USER ATTACK
     
-        let pilotAttack = Math.floor(Math.random() * pilot.attackDamage) //multiplied by players attack damage
+        let pilotAttack = Math.floor(Math.random() * pilot.attackDamage) //will be a random number between 0 and the pilots attack damage
         console.log("You attack the" + random.name  + " inflicting " + pilotAttack + " damage! ")
         random.hp = random.hp - pilotAttack
         readline.question("The " + random.name + "  HP is " + random.hp)
