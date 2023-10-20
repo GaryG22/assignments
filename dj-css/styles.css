@@ -1,0 +1,70 @@
+.boxes{
+display: inline-block;
+}
+#box1{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box1:hover{
+    transition: background-color 1s linear .5s;
+    cursor: pointer;
+    background-color: rgb(104, 142, 255);
+    border-radius: 20px;
+}
+#box2{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box2:hover{
+    transition: width 1.5s ;
+    cursor:crosshair;
+    background-color: rgb(255, 145, 145);
+    width: 250px;
+}
+#box3{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box3:hover{
+    transition: border-radius 1s;
+    cursor:col-resize;
+    background-color: rgb(136, 255, 136);
+    border-radius: 100px;
+}
+#box4{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box4:hover{
+    transition: background-color 2s;
+    cursor:grab;
+    background-color: rgb(197, 136, 255);
+    box-shadow: 20px 20px 50px;
+}
+#box5{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box5:hover{
+    transition: margin-top 2s;
+    cursor:zoom-in;
+    margin-top: 50px;
+    background-color: rgb(113, 255, 241);
+}
+#box6{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+}
+#box6:hover{
+    transition: opacity 1.5s linear;
+    cursor:wait;
+    opacity: 50%;
+    background-color: rgb(255, 98, 0);
+    border-radius: 10px;
+}
