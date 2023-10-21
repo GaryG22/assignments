@@ -627,40 +627,73 @@ height: 500px;
   height: 500px;
 }
 .contactMe{
-  padding-left: 720px;
-  margin-top: -180px;
+  padding-left: 650px;
+  margin-top: -310px;
   font-size: 25px;
   -webkit-text-fill-color: white;
 }
-#name{
+.contactMe::before{
+  content: "<h1> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+/*#name{
   margin-left: 715px;
-  margin-top: 10px;
+  margin-top: 05px;
   width: 300px;
-  height: 30px;
+  height: 0px;
   border-radius: 8px;
   border-color: #74a7ff;
+  font-family: 'Francois One', sans-serif;
+  font-size: 17px;
+}*/
+#name{
+  background: transparent;
+ border: none;
+  width: 20px;
+  margin-left: 720px;
+  margin-top: 0px;
+  font-size: 17px;
+  -webkit-text-fill-color: white;
+  outline: 0px solid transparent;
+  font-family: Consolas, 'Courier New', monospace;
 }
 #email{
-  margin-left: 715px;
-  margin-top: 50px;
-  width: 300px;
-  height: 30px;
-  border-radius: 8px;
-  border-color: #74a7ff;
+  background: transparent;
+ border: none;
+  width: 20px;
+  margin-left: 720px;
+  margin-bottom:0px;
+  font-size: 17px;
+  -webkit-text-fill-color: white;
+  outline: 0px solid transparent;
+  font-family: Consolas, 'Courier New', monospace;
 }
 #subject{
-  margin-left: 715px;
-  margin-top: 50px;
-  width: 300px;
-  height: 30px;
-  border-radius: 8px;
-  border-color: #74a7ff;
+  background: transparent;
+  border: none;
+   width: 20px;
+   margin-left: 720px;
+   margin-bottom:0px;
+   font-size: 17px;
+   -webkit-text-fill-color: white;
+   outline: 0px solid transparent;
+   font-family: Consolas, 'Courier New', monospace;
+  font-size: 17px;
 }
 .rocket { 
- width: 50px;
+ width: 40px;
 float: right;
-margin-right: 150px;
-margin-top: -70px;
+margin-right: 190px;
+margin-top: -60px;
+}
+.contactMe::after{
+  word-spacing: 45px;
+  content: " </h1>";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
 }
 .chat{
   font-size: 40px;
@@ -675,11 +708,139 @@ margin-top: -70px;
   -webkit-text-fill-color: white;
 }
 .contactTitle{
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 50px;
-  
-  background-color: #0e0e0e;
+  background-color: #000000;
   overflow: visible;
   height: 550px;
   border-radius: 25px;
 }
+#comments{
+  background: transparent;
+  border: none;
+   max-width: 100px;
+   max-height: 200px;
+   margin-left: 720px;
+   margin-top: 0px;
+   font-size: 17px;
+   -webkit-text-fill-color: white;
+   outline: 0px solid transparent;
+   font-family: Consolas, 'Courier New', monospace;
+}
+.send{
+  background-color: #002bff;
+  width: 130px;
+  height: 40px;
+  border-radius: 08px;
+  margin-left: 810px;
+  margin-top: 30px;
+  border: #000;
+  font-family: 'Francois One', sans-serif;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
+}
+#name::before{
+  content: "<Name> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#name::after{
+  content: "<Name> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#email::before{
+  content: "<Email> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#email::after{
+  content: "<Email> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#subject::before{
+  content: "<Subject> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#subject::after{
+  content: "<Subject> ";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#comments::before{
+  content: "#comments { ";
+  -webkit-text-fill-color: #b9c628;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+#comments::after{
+  content: "} ";
+  -webkit-text-fill-color: #b9c628;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+}
+.doc1{
+  font-size: 20px;
+  -webkit-text-fill-color: #002bff;
+  outline: 0px solid transparent;
+  font-family: Consolas, 'Courier New', monospace;
+  margin-left: 600px;
+  padding-top: 40px;
+  opacity: 20%;
+}
+.doc1::before{
+  content: "<!";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+  opacity: 50%;
+}
+.doc1::after{
+  content: " html>";
+  -webkit-text-fill-color: #44baff;
+  font-size: 19px;
+  font-family: Consolas, 'Courier New', monospace;
+  opacity: 50%;
+}
+.headTag{
+  margin-left: 620px;
+  margin-top: -10px;
+}
+.headTag::before{
+  content: "<html>";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+  opacity: 30%;
+}
+.headTag1{
+  margin-left: 630px;
+  margin-top: -20px;
+}
+.headTag1::before{
+  content: "<head></head>";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+  opacity: 40%;
+}
+.bodyTag{
+  margin-left: 640px;
+  margin-top: -20px;
+}
+.bodyTag::before{
+  content: "<body>";
+  -webkit-text-fill-color: #002bff;
+  font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
+  opacity: 50%;
+}
+
