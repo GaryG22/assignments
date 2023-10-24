@@ -1,6 +1,8 @@
 
 html, body {
 background-color: #323232;
+width: auto;
+scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
   overflow: hidden;
@@ -297,7 +299,8 @@ nav {
     border-radius: 8px;
 }
 .nav-links a.active {
-    margin-right: 210px;
+    margin-left: 70px;
+    margin-right: 160px;
     float: left;
     font-size: large;
     -webkit-text-fill-color: #A7C9FF;
@@ -310,6 +313,7 @@ nav {
 .nav-links a.hire {
     background-color: black;
     border-radius: 8px;
+    margin-left: 0px;
 }
 
 .ground {
@@ -628,7 +632,7 @@ height: 500px;
 }
 .contactMe{
   padding-left: 650px;
-  margin-top: -310px;
+  margin-top: -410px;
   font-size: 25px;
   -webkit-text-fill-color: white;
 }
@@ -652,40 +656,37 @@ height: 500px;
   background: transparent;
  border: none;
   width: 20px;
-  margin-left: 720px;
-  margin-top: 0px;
   font-size: 17px;
   -webkit-text-fill-color: white;
   outline: 0px solid transparent;
   font-family: Consolas, 'Courier New', monospace;
+  caret-color: #002bff;
 }
 #email{
   background: transparent;
  border: none;
   width: 20px;
-  margin-left: 720px;
-  margin-bottom:0px;
   font-size: 17px;
   -webkit-text-fill-color: white;
   outline: 0px solid transparent;
   font-family: Consolas, 'Courier New', monospace;
+  caret-color: #002bff;
 }
 #subject{
   background: transparent;
   border: none;
    width: 20px;
-   margin-left: 720px;
-   margin-bottom:0px;
    font-size: 17px;
    -webkit-text-fill-color: white;
    outline: 0px solid transparent;
    font-family: Consolas, 'Courier New', monospace;
   font-size: 17px;
+  caret-color: #002bff;
 }
 .rocket { 
  width: 40px;
 float: right;
-margin-right: 190px;
+margin-right: 145px;
 margin-top: -60px;
 }
 .contactMe::after{
@@ -698,7 +699,7 @@ margin-top: -60px;
 .chat{
   font-size: 40px;
   margin-left: 50px;
-  padding-top: 100px;
+  padding-top: 80px;
   -webkit-text-fill-color: white;
 }
 .chat2{
@@ -709,23 +710,21 @@ margin-top: -60px;
 }
 .contactTitle{
   margin-top: 200px;
-  margin-left: 50px;
-  background-color: #000000;
+  margin-left: 75px;
+  background-color: #292929;
   overflow: visible;
+  width: 1150px;
   height: 550px;
   border-radius: 25px;
 }
 #comments{
   background: transparent;
   border: none;
-   max-width: 100px;
-   max-height: 200px;
-   margin-left: 720px;
-   margin-top: 0px;
    font-size: 17px;
    -webkit-text-fill-color: white;
    outline: 0px solid transparent;
    font-family: Consolas, 'Courier New', monospace;
+  caret-color: #ffe100;
 }
 .send{
   background-color: #002bff;
@@ -740,37 +739,37 @@ margin-top: -60px;
   cursor: pointer;
 }
 #name::before{
-  content: "<Name> ";
+  content: "<Name>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #name::after{
-  content: "<Name> ";
+  content: "<Name>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #email::before{
-  content: "<Email> ";
+  content: "<Email>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #email::after{
-  content: "<Email> ";
+  content: "<Email>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #subject::before{
-  content: "<Subject> ";
+  content: "<Subject>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #subject::after{
-  content: "<Subject> ";
+  content: "<Subject>";
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
@@ -782,7 +781,7 @@ margin-top: -60px;
   font-family: Consolas, 'Courier New', monospace;
 }
 #comments::after{
-  content: "} ";
+  content: " }";
   -webkit-text-fill-color: #b9c628;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
@@ -819,7 +818,7 @@ margin-top: -60px;
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
-  opacity: 30%;
+  opacity: 25%;
 }
 .headTag1{
   margin-left: 630px;
@@ -830,7 +829,7 @@ margin-top: -60px;
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
-  opacity: 40%;
+  opacity: 35%;
 }
 .bodyTag{
   margin-left: 640px;
@@ -841,6 +840,53 @@ margin-top: -60px;
   -webkit-text-fill-color: #002bff;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
-  opacity: 50%;
+  opacity: 55%;
 }
-
+.comment{
+  width: 450px;
+  height: 100px;
+  margin-left: 705px;
+  margin-top: -10px;
+  overflow: scroll;
+}
+.nameCon{
+  width: 450px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 700px;
+  margin-top: -10px;
+  overflow: hidden;
+}
+.mail{
+  width: 450px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 700px;
+  margin-top: -10px;
+}
+.subjectCon{
+  width: 450px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 700px;
+  margin-top: -10px;
+}
+.email-link{
+  margin-left: 50px;
+  margin-bottom: 140px;
+  padding-top: 40px;
+}
+.emailMe{
+  -webkit-text-fill-color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.email-link svg {
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+}
+.resume{
+  width: 1200px;
+  height: 500px;
+}
