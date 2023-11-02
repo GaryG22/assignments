@@ -1,0 +1,74 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "Name": "Jalapeno Poppers",
+                    "Ingredients": ["Jalapenos", "Cream Cheese", "Bacon" ],
+                    "Description": "The Best Jalapeno Poppers you'll ever have!"
+                },
+                {
+                    "Name": "Buffalo Wings",
+                    "Ingredients": ["Chicken Wings", "Buffalo Sauce" ],
+                    "Description": "Crispy, hot, and delicious wings"
+                }
+            ],
+                "Cold Sandwhiches": [
+                    {
+                        "Name": "Tuna Sandwhich",
+                        "Ingredients": ["Tuna", "Mayo", "bread"],
+                        "Description": "Fresh and delicious tuna sandwhich!"
+                    },
+                    {
+                        "Name":"Chicken Sandwich",
+                        "Ingredients": ["Chicken Breast", "Mayo", "bread"],
+                        "Description": "Chicken sandwhich cooked to perfection!"
+                    }
+                ],
+                    
+                "hot sandwiches":[
+                    {
+                        "Name":"BLT Sandwhich",
+                        "Ingredients": ["Bacon", "Lettuce", "Tomato", "bread"],
+                        "Description": "Crispy and steming hot BLT ready to eat!" 
+                    },
+                    {
+                        "Name":"Pulled Pork Sandwich",
+                        "Ingredients": ["Pork", "Cheese","bread"],
+                        "Description": "The best and most delicious pulled pork sandwhich you'll ever taste!" 
+                    }
+                ],
+
+                    "desserts": [
+                        {
+                            "Name":"Cheese Cake",
+                            "Ingredients": ["cheese", "Sugar", "Cracker Crumbs"],
+                            "Description": "Most delectable and filling cheesecake you'll ever have!" 
+                        },
+                        {
+                            "Name":"RootBeer Float",
+                            "Ingredients": ["RootBeer", "Icecream"],
+                            "Description": "World's best rootbeer float!" 
+                        }
+                    ],
+
+                        "drinks": [
+                            {
+                                "Name":"RootBeer",
+                                "Ingredients": ["RootBeer", "Sugar"],
+                                "Description": "Classic and delicious rootbeer!"  
+                            },
+                            {
+                                "Name":"Lemonade",
+                                "Ingredients": ["Lemon", "Sugar", "Water"],
+                                "Description": "Refreshing lemonade for the perfect summer drink!"  
+                            },
+                            {
+                                "Name":"Iced Tea",
+                                "Ingredients": ["Tea", "Sugar", "Water"],
+                                "Description": "Refreshing Iced Tea for the perfect summer drink!"  
+                            }
+                        ]
+                    }
+            ]
+        }
