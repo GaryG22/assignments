@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
     <head> 
             <title> Portfolio </title>
             <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
@@ -32,9 +32,9 @@
     <body> 
         <nav>
             <div class="heading">
-                <ul class="nav-links">
+                <ul id = "shrink3" class="nav-links">
                     <li><a class="active" href="index.html">Gary Gritsch</a></li>
-                    <li><a href="index.html" href = #particles-js>Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href = #about>About</a></li>
                     <li><a href = #resume>Resume</a></li>
                     <li><a href = #projects>Projects</a></li>
@@ -42,27 +42,27 @@
                 </ul>
             </div>    
         </nav> 
-        <article id ="particles-js" id = "home">
-            <div class = "container">
+        <article class = "shrink1" id = "particles-js" id = "home" >
+            <div class = "container" >
                 <span>
                     <img class = "myImg" src = "https://i.postimg.cc/BQD6g5R9/Template-from-perfect-one-Photo-Room-3-Photo-Room-1.png">
                 </span>
-                <div class="header">
-                    <h1>FULL-STACK SOFTWARE</h1> <h1 class = "dev">DEVELOPER</h1>
+                <div class = "header">
+                    <h1 class = "full">FULL-STACK SOFTWARE</h1> <h1 class = "dev">DEVELOPER</h1>
                     <p>Hi, I'm Gary Gritsch. A passionate full-stack developer</p>
                     <p class = "split"> located in Bozeman, Montana.</p>
                 </div>
                         <span class="wave">👋</span>
                         <span class = "pin">📍</span>
-                        <div class = "lang">                                                    
+                        <div  class = "lang">                                                    
                             <img class = "insta" src = "https://i.postimg.cc/SN0vYgrx/github-Photo-Room-1.png">
                             <img class = "link" src = "https://i.postimg.cc/sgVNfvjj/linked-Photo-Room.png">
                             <img class = "git" src = "https://i.postimg.cc/3JbvNq7k/github-Photo-Room.png">
                         </div>
             </div>
         </article>
-            <article id = about>
-                <div class = "about1">
+            <article id = "about" >
+                <div id = "shrink3" class = "about1">
                     <div class="cubeCon">
                         <model-viewer
                         id="envlight-demo" camera-controls touch-action="pan-y"  disable-pan oncontextmenu="return false;"
@@ -70,19 +70,20 @@
                        </model-viewer>
                     <div class = "me">
                         <h1 class = "me1">Developing and Growing!</h1>
-                        <p class = "me2">Software Developemnt is a huge passion of mine! From creating random floating islands likes this one, to full scale API infested web pages. If there is a challenge and a creation to be made, thats where you'll find me. I love every part of development even when it feels like I might be wondering a dark room without a flashlight :) </p>
-                        <button onclick = "window.location.href = 'about me/index.html'" class="glow-on-hover" type="button">Read More About Me</button>
+                        <p  class = "me2">Software Developemnt is a huge passion of mine! From creating random floating islands likes this one, to full scale API infested web pages. If there is a challenge and a creation to be made, thats where you'll find me. I love every part of development even when it feels like I might be wondering a dark room without a flashlight :) </p>
+                        <button onclick = "window.location.href = 'about me/index.html'" id = "shrink3"  class="glow-on-hover" type="button">Read More About Me</button>
                     </div>
                     </div>
                 </div>
             </article>
-        <article id = projects>
-        <div class = "project">
+                <img  class = "moon" src = "https://i.postimg.cc/x1k4WSkX/moon-Photo-Room-4.png"/>
+        <article id = "projects" class = "projects">
+        <div id = "shrink3" class = "project">
            <div><img class = "car1" src = "https://i.postimg.cc/bJX04jvp/isometric-car-vector-44168224-Photo-Room-Photo-Room-1.png"/></div>
                 <div class = "containers">
-                    <div class = " con container2"> </div>
-                    <div class = " con container3"> </div>
-                    <div class = " con container4"> </div>
+                    <div class = "container2"> </div>
+                    <div class = "container3"> </div>
+                    <div class = "container4"> </div>
                 </div>
             <img class = "car2" src = "https://i.postimg.cc/rp7HTS6x/car-isometric-icon-vector-44341448-Photo-Room-2-Photo-Room-2.png"/>
             <div class = "road">
@@ -93,12 +94,12 @@
         </div>
         </article>
         <article id = "resume">
-            <div class = "resume">
+            <div id = "shrink4" class = "resume">
 
             </div>
         </article>
-        <article id = "contact">
-            <form class = "contactForm">
+        <article id = "contact" class = "contact">
+            <form id = "shrink4" class = "contactForm">
                 <div class = "contactTitle">
                     <div class="email-link">
                         <h2 class = "emailMe">Email Me! </h2>
