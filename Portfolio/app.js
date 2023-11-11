@@ -131,10 +131,10 @@ const modelViewer = document.querySelector("#envlight-demo");
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 355,
+        "value": 655,
         "density": {
           "enable": true,
-          "value_area": 789.1476416322727
+          "value_area": 1289.1476416322727
         }
       },
       "color": {
@@ -160,7 +160,7 @@ const modelViewer = document.querySelector("#envlight-demo");
         "random": false,
         "anim": {
           "enable": true,
-          "speed": 0.2,
+          "speed": 1,
           "opacity_min": 0,
           "sync": false
         }

@@ -1,9 +1,13 @@
 
 html {
-background: linear-gradient(180deg,#121212, #282828,#323232, #323232,#323232, #323232);
+background: linear-gradient(180deg,#121212, #202020,#323232, #323232,#323232, #323232);
 width: auto;
 scroll-behavior: smooth;
 overflow-x: hidden;
+overflow: hidden;
+}
+body{
+  overflow: hidden;
 }
 ::-webkit-scrollbar{
   overflow: hidden;
@@ -25,12 +29,11 @@ overflow-x: hidden;
   transform-style: preserve-3d;
   overflow:hidden;
   background-color: rgb(67, 67, 67);
-  /*box-shadow: 20px 20px 60px rgb(207, 223, 255),
-  -20px -20px 60px rgb(207, 223, 255);*/
+  box-shadow: 20px 20px 60px rgb(207, 223, 255),
+  -20px -20px 60px rgb(207, 223, 255);
 }
 .container2 {
   margin-top:200px;
- 
   margin-left: 215px;
   background-color: rgb(255, 255, 255);
   height: 170px;
@@ -136,7 +139,7 @@ overflow-x: hidden;
 }
 .car2 {
   width: 600px;
-    margin-left: -65px;
+    margin-left: -60px;
     margin-top: -350px;
     background:none;
     overflow: visible;
@@ -149,13 +152,14 @@ ul {
    
 .header {
     margin-top: -320px;
-    margin-left: 465px;
+    margin-left: 500px;
 } 
 .header h1 {
     margin-right: -40px;
-    font-size: 40px;
+    font-size: 55px;
     line-height: 25px;
     animation: color-change 10s infinite;
+    position: relative;
 }
 
 @keyframes color-change {
@@ -167,8 +171,9 @@ ul {
 }
 
 .lang {
-  margin-top: 400px;
-  margin-right: -185px;
+  margin-top: 380px;
+  margin-right: 65px;
+  position: relative;
 }
 .dev {
     text-indent: 0px;
@@ -177,7 +182,9 @@ ul {
     line-height: 15px;
     text-indent:1px;  
     margin-top: 9px;
-    -webkit-text-fill-color:#ffffff
+    font-size: 20px;
+    -webkit-text-fill-color:#ffffff;
+    position: relative;
 }
  .split {
    margin-left: 0px;
@@ -188,10 +195,10 @@ ul {
     animation-duration: 2.5s;        /* Change to speed up or slow down */
     animation-iteration-count: infinite;  /* Never stop waving :) */
     transform-origin: 80% 80%;       /* Pivot around the bottom-left palm */
-    font-size: 40px;
+    font-size: 45px;
     float: right;
-    margin-top: -135px;
-    margin-right: 270px;
+    margin-top: -165px;
+    margin-right: 440px;
 }
   
 @keyframes wave-animation {
@@ -206,8 +213,8 @@ ul {
 }
 .pin {
     float: right;
-    margin-top: -37px;
-    margin-right: 300px;
+    margin-top: -40px;
+    margin-right: 500px;
 }
 .insta {
     float: right;
@@ -244,22 +251,26 @@ ul {
     transform: scale(1.4);
 }
 .myImg {
-    height: 350px;
+    height: 320px;
     background: transparent;
-    margin-top: 25px;
-    margin-left: 80px;
+    margin-top: 100px;
+    margin-left: -1080px;
+    position: relative;
+}
+.surface{
+  margin-left: -579px;
+  margin-top: -500px;
+  width: auto;
 }
 
 .heading {
-
-    margin: 0px;
+    margin-top:110px;
     padding: 0px;
 }
   
 nav {
-  
+  position: fixed;
     display: flex;
-    position: fixed;
     justify-content: space-around;
     align-items: center;
     margin-top: -80px;
@@ -268,7 +279,6 @@ nav {
 }
   
 .heading {
-  
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -297,8 +307,8 @@ nav {
     border-radius: 8px;
 }
 .nav-links a.active {
-    margin-left: 70px;
-    margin-right: 160px;
+    margin-left: 10px;
+    margin-right: 200px;
     float: left;
     font-size: large;
     -webkit-text-fill-color: #A7C9FF;
@@ -343,13 +353,18 @@ nav {
   background: none;
   position:static;
 }
+#projects{
+  margin-top: 400px;
+  width: auto;
+  margin-left: 20px;
+}
 .project{
-  width: 1280px;
   margin-left: 10px;
   margin-top: -300px;
   height: 650px;
   align-items: stretch;
   overflow: hidden;
+  width: auto;
 }
 .full-screen {
   position: fixed;
@@ -381,7 +396,7 @@ nav {
   height: 1100px;
   overflow: hidden;
   margin-left: 30px;
-  margin-top: -550px;
+  margin-top: 650px;
 }
 .title2{
   font-size: 50px;
@@ -607,7 +622,8 @@ height: 500px;
 }
 #particles-js {
   width: auto;
-  height: 100%;
+  height: 1600px;
+  margin-bottom: -1600px;
 }
 .contact{
   margin-left: -20px;
@@ -818,7 +834,7 @@ margin-top: -60px;
   top: 4px;
 }
 .resume{
-  width: 1282px;
+  width: auto;
   margin-left: -10px;
   height: 550px;
   margin-top: 100px;
@@ -844,13 +860,46 @@ margin-top: -60px;
   .nav-links{
     margin-left: 0px;
   }
-  .about1{
-    margin-top: 100px;
-  }
+}
+#skills{
+  width: auto;
+  height: 600px;
+  margin-top: -450px
 }
 .moon{
-  width: 1300px;
-  margin-top: -400px;
-  margin-left: -150px;
-  margin-bottom: 50px;
+  width: 1000px;
+ margin-top: 0px;
+ margin-left: -70px;
+}
+.planet1{
+  width: 300px;
+  margin-left: 920px;
+}
+.clouds{
+  position: absolute;
+  margin-top: -700px;
+  margin-left: -500px;
+  width: 1280px;
+  height: 850px;
+  pointer-events: none;
+  overflow: hidden;
+}
+.clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(3s * var(--i)) linear infinite;
+}
+@keyframes animate{
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
 }
