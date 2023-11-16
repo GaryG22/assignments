@@ -840,27 +840,6 @@ margin-top: -60px;
   margin-top: 100px;
   background: linear-gradient(180deg, #323232, #252525, #1c1c1c, #111111);
 }
-
-@media (max-width: 760px){
-  .shrink1{
-    transform:scale(0.5);
-    }
-  #shrink2{
-    transform:scale(0.5);
-  }
-  #shrink3{
-    transform:scale(0.5);
-  }
-  #shrink4{
-    transform:scale(0.4);
-  }
-  .header{
-    margin-left: 425px;
-  }
-  .nav-links{
-    margin-left: 0px;
-  }
-}
 #skills{
   width: auto;
   height: 600px;
@@ -878,8 +857,8 @@ margin-top: -60px;
 .clouds{
   position: absolute;
   margin-top: -700px;
-  margin-left: -500px;
-  width: 1280px;
+  margin-left: -520px;
+  width: 1350px;
   height: 850px;
   pointer-events: none;
   overflow: hidden;
@@ -887,6 +866,7 @@ margin-top: -60px;
 .clouds img {
   position: absolute;
   bottom: 0;
+  width: auto;
   max-width: 100%;
   animation: animate calc(3s * var(--i)) linear infinite;
 }
@@ -902,4 +882,112 @@ margin-top: -60px;
     opacity: 0;
     transform: scale(3);
   }
+}
+
+@media (max-width: 760px){
+
+}
+
+.dashboard {
+  display: flex;
+  width: 500px;
+  height: 600px;
+  margin-top: -50px;
+  margin-left: 700px;
+}
+
+.svg1 {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: #1A2C34;
+}
+
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  stroke: aqua;
+  animation: progress-1 2s ease-out;
+}
+.meter-2 {
+  stroke: lime;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  animation: progress-2 2s ease-out;
+}
+.meter-3 {
+  stroke: magenta;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 125;
+  animation: progress-3 2s ease-out;
+}
+
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 125;
+  }
+}
+.CSS{
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 52px;
+  font-size: 32px;
+  -webkit-text-fill-color: #121212;
+  font-family:fantasy;
+}
+.HTML{
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 54px;
+  font-size: 30px;
+  -webkit-text-fill-color: #121212;
+  font-family:fantasy;
+}
+.JAVASCRIPT{
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 62px;
+  font-size: 15px;
+  -webkit-text-fill-color: #121212;
+  font-family:fantasy;
+}
+.skillTitle{
+  margin-top: -430px;
+  margin-left: 800px;
+  font-size: 80px;
 }
