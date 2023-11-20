@@ -4,7 +4,7 @@ background: linear-gradient(180deg,#121212, #202020,#323232, #323232,#323232, #3
 width: auto;
 scroll-behavior: smooth;
 overflow-x: hidden;
-overflow: hidden;
+
 }
 body{
   overflow: hidden;
@@ -843,12 +843,7 @@ margin-top: -60px;
 #skills{
   width: auto;
   height: 600px;
-  margin-top: -450px
-}
-.moon{
-  width: 1000px;
- margin-top: 0px;
- margin-left: -70px;
+  margin-top: 100px
 }
 .planet1{
   width: 300px;
@@ -919,20 +914,20 @@ margin-top: -60px;
 
 .meter-1 {
   stroke-dasharray: 360;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
   stroke: aqua;
   animation: progress-1 2s ease-out;
 }
 .meter-2 {
   stroke: lime;
   stroke-dasharray: 360;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 0;
   animation: progress-2 2s ease-out;
 }
 .meter-3 {
   stroke: magenta;
   stroke-dasharray: 360;
-  stroke-dashoffset: 125;
+  stroke-dashoffset: 0;
   animation: progress-3 2s ease-out;
 }
 
@@ -941,7 +936,7 @@ margin-top: -60px;
         stroke-dashoffset: 360;
     }
     to {
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 0;
     }
 }
 
@@ -950,7 +945,7 @@ margin-top: -60px;
     stroke-dashoffset: 360;
   }
   to {
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -959,13 +954,13 @@ margin-top: -60px;
     stroke-dashoffset: 360;
   }
   to {
-    stroke-dashoffset: 125;
+    stroke-dashoffset: 0;
   }
 }
 .CSS{
   position: absolute;
   margin-left: 45px;
-  margin-top: 52px;
+  margin-top: 05px;
   font-size: 32px;
   -webkit-text-fill-color: #121212;
   font-family:fantasy;
@@ -973,7 +968,7 @@ margin-top: -60px;
 .HTML{
   position: absolute;
   margin-left: 185px;
-  margin-top: 54px;
+  margin-top: 05px;
   font-size: 30px;
   -webkit-text-fill-color: #121212;
   font-family:fantasy;
@@ -981,13 +976,171 @@ margin-top: -60px;
 .JAVASCRIPT{
   position: absolute;
   margin-left: 325px;
-  margin-top: 62px;
+  margin-top: 15px;
   font-size: 15px;
   -webkit-text-fill-color: #121212;
   font-family:fantasy;
 }
 .skillTitle{
-  margin-top: -430px;
+  margin-top: -400px;
   margin-left: 800px;
   font-size: 80px;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(44, 128, 255); }
+  25% { color: rgb(138, 175, 255); }
+  50% { color: rgb(197, 228, 255); }
+  75% { color: rgb(138, 175, 255); }
+  100% { color: rgb(44, 128, 255); }
+}
+
+.dashboard2 {
+  display: flex;
+  width: 500px;
+  height: 600px;
+  margin-top: -440px;
+  margin-left: 700px;
+}
+
+.svg1 {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: #1A2C34;
+}
+
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  
+}
+
+.meter-4 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 0;
+  stroke: rgb(0, 149, 255);
+  animation: progress-1 2s ease-out;
+}
+.meter-5 {
+  stroke: rgb(132, 0, 255);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 0;
+  animation: progress-2 2s ease-out;
+}
+.meter-6 {
+  stroke: rgb(255, 0, 0);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 0;
+  animation: progress-3 2s ease-out;
+}
+
+@keyframes progress-4 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes progress-5 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes progress-6 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.wholeSword{
+  margin-top: 100px;
+  width: 400px;
+  height: 550px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.swordBlade{
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 320px;
+  transition: transform 1s;
+}
+.swordSlip{
+  width: 320px;
+  margin-top: -180px;
+  position: relative;
+  margin-left: 50px;
+  transition: transform 1s;
+}
+.swordHandle{
+  width: 320px;
+  margin-top: -300px;
+  margin-left: 50px;
+  transition: transform 1s;
+}
+.swordNob{
+  width: 320px;
+  margin-top: -270px;
+  margin-left: 50px;
+  transition: transform 1s;
+}
+.wholeSword:hover .swordBlade{
+  transform: translateY(-60px);
+}
+.wholeSword:hover .swordSlip{
+  transform: translateY(-20px);
+}
+.wholeSword:hover .swordHandle{
+  transform: translateY(20px);
+}
+.wholeSword:hover .swordNob{
+  transform: translateY(50px);
+}
+.cssDiv{
+  opacity: 0;
+}
+.cssHead{
+  margin-top: -500px;
+  margin-left: -50px;
+  text-decoration: underline;
+}
+.cssP{
+  width: 230px;
+  margin-left: -50px;
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 550;
+  margin-top: -15px;
+}
+.htmlHead{
+  margin-top: 40px;
+  margin-left: 250px;
+}
+.mern{
+  margin-top: 150px;
+  margin-left: 300px;
+}
+.javaHead{
+  margin-top: 40px;
+}
+.wholeSword:hover .cssDiv{
+  opacity: 100%;
+  transition: opacity 4s;
 }
