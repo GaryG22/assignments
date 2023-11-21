@@ -151,7 +151,7 @@ ul {
 }
    
 .header {
-    margin-top: -320px;
+    margin-top: -340px;
     margin-left: 500px;
 } 
 .header h1 {
@@ -982,7 +982,7 @@ margin-top: -60px;
   font-family:fantasy;
 }
 .skillTitle{
-  margin-top: -400px;
+  margin-top: -480px;
   margin-left: 800px;
   font-size: 80px;
   animation: color-change 5s infinite;
@@ -1094,7 +1094,7 @@ margin-top: -60px;
 }
 .swordHandle{
   width: 320px;
-  margin-top: -300px;
+  margin-top: -295.5px;
   margin-left: 50px;
   filter: drop-shadow(10px 10px 10px);
   transition: transform 1s;
@@ -1110,7 +1110,7 @@ margin-top: -60px;
   transform: translateY(-60px);
 }
 .wholeSword:hover .swordSlip{
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 .wholeSword:hover .swordHandle{
   transform: translateY(20px);
@@ -1124,27 +1124,72 @@ margin-top: -60px;
 .cssHead{
   margin-top: -500px;
   margin-left: -50px;
-  text-decoration: underline;
 }
 .cssP{
   width: 230px;
   margin-left: -50px;
   font-family: Consolas, 'Courier New', monospace;
   font-weight: 550;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 .htmlHead{
   margin-top: 40px;
   margin-left: 250px;
 }
+.htmlP{
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 550;
+  width: 230px;
+  margin-top: -20px;
+  margin-left: 250px;
+}
+.htmlDiv{
+  opacity: 0;
+  margin-top: -60px;
+  margin-left: 50px;
+}
 .mern{
   margin-top: 150px;
   margin-left: 300px;
 }
+.mernP{
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 550;
+  width: 230px;
+  margin-left: 300px;
+  margin-top: -20px;
+}
+.mernDiv{
+  opacity: 0;
+  margin-top: -70px;
+}
 .javaHead{
   margin-top: 40px;
 }
+.javaP{
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 550;
+  width: 230px;
+  margin-top: -20px;
+}
+.javaDiv{
+  opacity: 0;
+  margin-top: -45px;
+  margin-left: -60px;
+}
 .wholeSword:hover .cssDiv{
   opacity: 100%;
-  transition: opacity 4s;
+  transition: opacity 3.5s;
+}
+.wholeSword:hover .htmlDiv{
+  opacity: 100%;
+  transition: opacity 3.5s;
+}
+.wholeSword:hover .mernDiv{
+  opacity: 100%;
+  transition: opacity 3.5s;
+}
+.wholeSword:hover .javaDiv{
+  opacity: 100%;
+  transition: opacity 3.5s;
 }
