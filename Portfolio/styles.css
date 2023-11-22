@@ -396,7 +396,7 @@ nav {
   height: 1100px;
   overflow: hidden;
   margin-left: 30px;
-  margin-top: 650px;
+  margin-top: 850px;
 }
 .title2{
   font-size: 50px;
@@ -622,8 +622,8 @@ height: 500px;
 }
 #particles-js {
   width: auto;
-  height: 1600px;
-  margin-bottom: -1600px;
+  height: 1900px;
+  margin-bottom: -1900px;
 }
 .contact{
   margin-left: -20px;
@@ -1120,9 +1120,10 @@ margin-top: -60px;
 }
 .cssDiv{
   opacity: 0;
+  margin-left: -10px;
 }
 .cssHead{
-  margin-top: -500px;
+  margin-top: -550px;
   margin-left: -50px;
 }
 .cssP{
@@ -1145,7 +1146,7 @@ margin-top: -60px;
 }
 .htmlDiv{
   opacity: 0;
-  margin-top: -60px;
+  margin-top: 0px;
   margin-left: 50px;
 }
 .mern{
@@ -1161,7 +1162,7 @@ margin-top: -60px;
 }
 .mernDiv{
   opacity: 0;
-  margin-top: -70px;
+  margin-top: -180px;
 }
 .javaHead{
   margin-top: 40px;
@@ -1174,7 +1175,7 @@ margin-top: -60px;
 }
 .javaDiv{
   opacity: 0;
-  margin-top: -45px;
+  margin-top: -100px;
   margin-left: -60px;
 }
 .wholeSword:hover .cssDiv{

@@ -134,7 +134,7 @@ const modelViewer = document.querySelector("#envlight-demo");
         "value": 655,
         "density": {
           "enable": true,
-          "value_area": 1289.1476416322727
+          "value_area": 1489.1476416322727
         }
       },
       "color": {
