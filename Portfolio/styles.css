@@ -4,7 +4,7 @@ background: linear-gradient(180deg,#121212, #202020,#323232, #323232,#323232, #3
 width: auto;
 scroll-behavior: smooth;
 overflow-x: hidden;
-
+overflow: hidden;
 }
 body{
   overflow: hidden;
@@ -856,7 +856,7 @@ margin-top: -60px;
   width: 1350px;
   height: 850px;
   pointer-events: none;
-  overflow: hidden;
+ overflow: hidden;
 }
 .clouds img {
   position: absolute;
@@ -883,104 +883,7 @@ margin-top: -60px;
 
 }
 
-.dashboard {
-  display: flex;
-  width: 500px;
-  height: 600px;
-  margin-top: -50px;
-  margin-left: 700px;
-}
 
-.svg1 {
-  width: 114px;
-  height: 114px;
-  margin: 1em;
-}
-
-.bg {
-  fill: none;
-  stroke-width: 10px;
-  stroke: #1A2C34;
-}
-
-[class^="meter-"] {
-  fill: none;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  
-}
-
-.meter-1 {
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  stroke: aqua;
-  animation: progress-1 2s ease-out;
-}
-.meter-2 {
-  stroke: lime;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  animation: progress-2 2s ease-out;
-}
-.meter-3 {
-  stroke: magenta;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  animation: progress-3 2s ease-out;
-}
-
-@keyframes progress-1 {
-    from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes progress-2 {
-  from {
-    stroke-dashoffset: 360;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes progress-3 {
-  from {
-    stroke-dashoffset: 360;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.CSS{
-  position: absolute;
-  margin-left: 45px;
-  margin-top: 05px;
-  font-size: 32px;
-  -webkit-text-fill-color: #121212;
-  font-family:fantasy;
-}
-.HTML{
-  position: absolute;
-  margin-left: 185px;
-  margin-top: 05px;
-  font-size: 30px;
-  -webkit-text-fill-color: #121212;
-  font-family:fantasy;
-}
-.JAVASCRIPT{
-  position: absolute;
-  margin-left: 325px;
-  margin-top: 15px;
-  font-size: 15px;
-  -webkit-text-fill-color: #121212;
-  font-family:fantasy;
-}
 .skillTitle{
   margin-top: -480px;
   margin-left: 800px;
@@ -996,80 +899,7 @@ margin-top: -60px;
   100% { color: rgb(44, 128, 255); }
 }
 
-.dashboard2 {
-  display: flex;
-  width: 500px;
-  height: 600px;
-  margin-top: -440px;
-  margin-left: 700px;
-}
 
-.svg1 {
-  width: 114px;
-  height: 114px;
-  margin: 1em;
-}
-
-.bg {
-  fill: none;
-  stroke-width: 10px;
-  stroke: #1A2C34;
-}
-
-[class^="meter-"] {
-  fill: none;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  
-}
-
-.meter-4 {
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  stroke: rgb(0, 149, 255);
-  animation: progress-1 2s ease-out;
-}
-.meter-5 {
-  stroke: rgb(132, 0, 255);
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  animation: progress-2 2s ease-out;
-}
-.meter-6 {
-  stroke: rgb(255, 0, 0);
-  stroke-dasharray: 360;
-  stroke-dashoffset: 0;
-  animation: progress-3 2s ease-out;
-}
-
-@keyframes progress-4 {
-    from {
-        stroke-dashoffset: 360;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes progress-5 {
-  from {
-    stroke-dashoffset: 360;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes progress-6 {
-  from {
-    stroke-dashoffset: 360;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 .wholeSword{
   margin-top: 100px;
   width: 400px;
@@ -1193,4 +1023,54 @@ margin-top: -60px;
 .wholeSword:hover .javaDiv{
   opacity: 100%;
   transition: opacity 3.5s;
+}
+.arrows {
+  width: 60px;
+  height: 72px;
+  margin-left: 80px;
+  margin-top: 0px;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.arrows path {
+  stroke: #2994D1;
+  fill: transparent;
+  stroke-width: 4px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+.arrowBtn{
+  margin-top: -200px;
+  margin-left: 25px;
+  position: absolute;
 }
