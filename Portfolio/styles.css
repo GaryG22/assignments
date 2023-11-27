@@ -3,13 +3,9 @@ html {
 background: linear-gradient(180deg,#121212, #202020,#323232, #323232,#323232, #323232);
 width: auto;
 scroll-behavior: smooth;
-overflow-x: hidden;
 overflow: hidden;
 }
 body{
-  overflow: hidden;
-}
-::-webkit-scrollbar{
   overflow: hidden;
 }
 ::-webkit-scrollbar{
@@ -19,18 +15,6 @@ body{
 .containers{
   margin-left: 75px;
   margin-top: -620px;
-}
-.container {
-  height: 400px;
-  width: 1000px;
-  margin-left: 120px;
-  border-radius:35px;
-  margin-top: 120px;
-  transform-style: preserve-3d;
-  overflow:hidden;
-  background-color: rgb(67, 67, 67);
-  box-shadow: 20px 20px 60px rgb(207, 223, 255),
-  -20px -20px 60px rgb(207, 223, 255);
 }
 .container2 {
   margin-top:200px;
@@ -878,12 +862,6 @@ margin-top: -60px;
     transform: scale(3);
   }
 }
-
-@media (max-width: 760px){
-
-}
-
-
 .skillTitle{
   margin-top: -480px;
   margin-left: 800px;
