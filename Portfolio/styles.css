@@ -1005,7 +1005,7 @@ margin-top: -60px;
 .arrows {
   width: 60px;
   height: 72px;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 0px;
   cursor: pointer;
   overflow: visible;
@@ -1051,4 +1051,50 @@ margin-top: -60px;
   margin-top: -200px;
   margin-left: 25px;
   position: absolute;
+}
+.arrows2 {
+  width: 60px;
+  height: 72px;
+  margin-left: 550px;
+  margin-top: 150px;
+  cursor: pointer;
+  overflow: visible;
+}
+.arrows2 path, .arrows3 path, .arrows4 path {
+  stroke: #2994D1;
+  fill: transparent;
+  stroke-width: 4px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+.arrows2 path.a1, .arrows3 path.a1, .arrows4 path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows2 path.a2, .arrows3 path.a2, .arrows4 path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows2 path.a3, .arrows3 path.a3, .arrows4 path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+.arrows3 {
+  width: 60px;
+  height: 72px;
+  margin-left: 500px;
+  margin-top: -25px;
+  cursor: pointer;
+  overflow: visible;
+  rotate: -60deg;
+}
+.arrows4 {
+  width: 60px;
+  height: 72px;
+  margin-left: 600px;
+  margin-top: 400px;
+  cursor: pointer;
+  overflow: visible;
 }
