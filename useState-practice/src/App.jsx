@@ -33,10 +33,36 @@ export default App
 		firstName: "John",
 		lastName: "Smith"
 	},
-  {
-    firstName: "Aaron",
-    lastName: "Rodgers"
-  }
+  
 ])
 
-setPeople()*/
+setPeople(prevPeople => {
+	return [
+     ...prevPeople, 
+     {
+        firstName: "Aaron", 
+        lastName: "Rodgers"
+     }
+  ]
+})*/
+
+/*const [colors, setColors] = setState(["pink", "blue"])
+
+// explicit return 
+setColors(prevColors => {
+	return [...prevColors, "green"]
+})
+
+// implicit return
+setColors(prevColors => [...prevColors, "green"])*/
+
+
+/*const [person, setPerson] = useState({
+  firstName: "John",
+  lastName: "Smith"
+})
+
+setPerson(prevState => ({
+  ...prevState,
+  age: 30
+}))*/
