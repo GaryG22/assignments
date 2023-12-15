@@ -1,4 +1,4 @@
-var developer = {
+const developer = {
     gender: "male",
     name: "Gary Gritsch",
     age: 21,
@@ -82,34 +82,6 @@ const modelViewer = document.querySelector("#envlight-demo");
     modelViewer.resetTurntableRotation(skyboxAngle);
     modelViewer.jumpCameraToGoal();
   }
-  
-  modelViewer.addEventListener('mousedown', (event) => {
-    panning = event.button === 2 || event.ctrlKey || event.metaKey || event.shiftKey;
-    if (!panning)
-      return;
-
-    lastX = event.clientX;
-    startPan();
-    event.stopPropagation();
-  }, true);
-
-  modelViewer.addEventListener('touchstart', (event) => {
-    const {targetTouches, touches} = event;
-    panning = targetTouches.length === 2 && targetTouches.length === touches.length;
-    if (!panning)
-      return;
-
-    lastX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
-    startPan();
-  }, true);
-
-  self.addEventListener('mousemove', (event) => {
-    if (!panning)
-      return;
-
-    updatePan(event.clientX);
-    event.stopPropagation();
-  }, true);
 
   modelViewer.addEventListener('touchmove', (event) => {
     if (!panning || event.targetTouches.length !== 2)
@@ -120,18 +92,11 @@ const modelViewer = document.querySelector("#envlight-demo");
     updatePan(thisX);
   }, true);
 
-  self.addEventListener('mouseup', (event) => {
-    panning = false;
-  }, true);
-  
-  modelViewer.addEventListener('touchend', (event) => {
-    panning = false;
-  }, true);
 
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 655,
+        "value": 400,
         "density": {
           "enable": true,
           "value_area": 1489.1476416322727
