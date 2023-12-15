@@ -1,0 +1,7 @@
+.color{
+  height: 400px;
+  width: 500px;
+  margin-left: 350px;
+  border: 5px solid black;
+  cursor: pointer;
+}
