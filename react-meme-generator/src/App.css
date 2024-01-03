@@ -1,0 +1,22 @@
+.head-title{
+  font-size: 50px;
+  padding-left: 30px;
+}
+
+.img{
+  position: absolute;
+  width: 300px;
+  margin-left: 500px;
+}
+.meme-input{
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.meme-btn{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -290px;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
