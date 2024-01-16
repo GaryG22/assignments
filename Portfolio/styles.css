@@ -250,6 +250,7 @@ ul {
 .heading {
     margin-top:110px;
     padding: 0px;
+    width: 100%;
 }
   
 nav {
@@ -612,6 +613,7 @@ height: 500px;
 .contact{
   margin-left: -20px;
   width: auto;
+  height: auto;
   margin-top: 100px;
   height: 500px;
 }
@@ -820,8 +822,9 @@ margin-top: -60px;
 .resume{
   width: auto;
   margin-left: -10px;
-  height: 550px;
+  height: 600px;
   margin-top: 100px;
+  margin-bottom: 100px;
   background: linear-gradient(180deg, #323232, #252525, #1c1c1c, #111111);
 }
 #skills{
@@ -1117,4 +1120,29 @@ margin-top: -60px;
   width: 100px;
   margin-left: 0px;
   border-radius: 10px;
+}
+.resumePage1{
+  width: 350px;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: .5s;
+}
+.resumePage1:hover{
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px){
+nav{
+  transform: scale(0.4);
+  left: -38%;
+}
+#particles-js{
+  transform: scale(0.5);
+  margin-top: -70px;
+}
+.full, .split, .wave, .clouds{
+  transform: scale(0.5);
+}
 }
