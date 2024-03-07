@@ -503,9 +503,9 @@ display: flex;
   -webkit-text-fill-color: #cadbff;
 }
 .cubeCon model-viewer{
-width: 500px;
-height: 500px;
-  margin-top: -400px;
+width: 480px;
+height: 480px;
+  margin-top: -430px;
   margin-left: 400px;
   filter:drop-shadow(0 0 10px rgb(0, 0, 0)) 
 }
@@ -1009,7 +1009,7 @@ margin-top: -60px;
   width: 60px;
   height: 72px;
   margin-left: 100px;
-  margin-top: -20px;
+  margin-top: -4c0px;
   cursor: pointer;
   overflow: visible;
 }
@@ -1059,28 +1059,28 @@ margin-top: -60px;
   width: 60px;
   height: 72px;
   margin-left: 550px;
-  margin-top: 150px;
+  margin-top: 100px;
   cursor: pointer;
   overflow: visible;
 }
-.arrows2 path, .arrows3 path, .arrows4 path {
+.arrows2 path, .arrows3 path, .arrows4 path, .arrows5 path{
   stroke: #2994D1;
   fill: transparent;
   stroke-width: 4px;  
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite; 
 }
-.arrows2 path.a1, .arrows3 path.a1, .arrows4 path.a1 {
+.arrows2 path.a1, .arrows3 path.a1, .arrows4 path.a1, .arrows5 path.a1 {
   animation-delay:-1s;
   -webkit-animation-delay:-1s; /* Safari 和 Chrome */
 }
 
-.arrows2 path.a2, .arrows3 path.a2, .arrows4 path.a2 {
+.arrows2 path.a2, .arrows3 path.a2, .arrows4 path.a2, .arrows5 path.a2 {
   animation-delay:-0.5s;
   -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
 }
 
-.arrows2 path.a3, .arrows3 path.a3, .arrows4 path.a3 { 
+.arrows2 path.a3, .arrows3 path.a3, .arrows4 path.a3, .arrows5 path.a3 { 
   animation-delay:0s;
   -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
@@ -1099,6 +1099,15 @@ margin-top: -60px;
   height: 72px;
   margin-left: 850px;
   margin-top: 250px;
+  cursor: pointer;
+  overflow: visible;
+}
+.arrows5 {
+  position: absolute;
+  width: 60px;
+  height: 72px;
+  margin-left: 1100px;
+  margin-top: -250px;
   cursor: pointer;
   overflow: visible;
 }
@@ -1122,10 +1131,10 @@ margin-top: -60px;
   border-radius: 10px;
 }
 .resumePage1{
-  width: 350px;
+  width: 300px;
   border-radius: 25px;
   margin-left: 50px;
-  margin-top: 80px;
+  margin-top: 100px;
   cursor: pointer;
   transition: .5s;
 }
